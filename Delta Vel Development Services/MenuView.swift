@@ -10,8 +10,6 @@ import VTabView
 
 struct MenuView: View {
 	
-	fileprivate let navHeight: CGFloat = 44 + 52
-	
     var body: some View {
 		
 			NavigationView {
@@ -31,7 +29,7 @@ struct MenuView: View {
 							}
 						}
 						
-						.frame(width: proxy.size.width, height: proxy.size.height - navHeight, alignment: .center)
+						.frame(width: proxy.size.width, height: proxy.size.height - 96 /* navbar height */, alignment: .center)
 						.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
 						.onAppear(perform: self.setDarkPageIndicator)
 					}
