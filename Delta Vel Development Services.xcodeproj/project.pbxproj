@@ -3,23 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A197F9E270ED6980074B690 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0A197F9D270ED6980074B690 /* FirebaseAnalytics */; };
+		0A197FA0270ED6980074B690 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A197F9F270ED6980074B690 /* FirebaseAuth */; };
+		0A197FA2270ED6980074B690 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0A197FA1270ED6980074B690 /* FirebaseDatabase */; };
+		0A197FA4270ED6980074B690 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0A197FA3270ED6980074B690 /* FirebaseStorage */; };
+		0A4093DC2632668C00D50AEE /* ALExt in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4093DB2632668C00D50AEE /* ALExt */; };
+		0A4093DF26326CE700D50AEE /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4093DE26326CE700D50AEE /* AppModel.swift */; };
+		0A4093E226326CF100D50AEE /* WebsiteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4093E126326CF100D50AEE /* WebsiteModel.swift */; };
+		0A4093EE26328F8A00D50AEE /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4093ED26328F8900D50AEE /* ImageHelper.swift */; };
+		0A904B6127100D820018A090 /* VTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 0A904B6027100D820018A090 /* VTabView */; };
+		0A904B63271013860018A090 /* AppCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A904B62271013860018A090 /* AppCardView.swift */; };
+		0A904B65271014300018A090 /* AppPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A904B64271014300018A090 /* AppPortfolioView.swift */; };
+		0A987F2E27101EA80046C4D2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A987F2D27101EA80046C4D2 /* MenuView.swift */; };
+		0A987F302710255D0046C4D2 /* WebsiteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A987F2F2710255D0046C4D2 /* WebsiteCardView.swift */; };
+		0A987F322710256D0046C4D2 /* WebsitePortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A987F312710256D0046C4D2 /* WebsitePortfolioView.swift */; };
 		0AC7B26B25EA183F008A3838 /* Delta_Vel_Development_ServicesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7B26A25EA183F008A3838 /* Delta_Vel_Development_ServicesApp.swift */; };
 		0AC7B26D25EA183F008A3838 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7B26C25EA183F008A3838 /* ContentView.swift */; };
 		0AC7B26F25EA1841008A3838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7B26E25EA1841008A3838 /* Assets.xcassets */; };
 		0AC7B27225EA1841008A3838 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7B27125EA1841008A3838 /* Preview Assets.xcassets */; };
+		0AC7B27B25EA1882008A3838 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AC7B27A25EA1882008A3838 /* GoogleService-Info.plist */; };
+		0ADFAD6F25EA1BA50095B84F /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFAD6E25EA1BA50095B84F /* Portfolio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4093DE26326CE700D50AEE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		0A4093E126326CF100D50AEE /* WebsiteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteModel.swift; sourceTree = "<group>"; };
+		0A4093ED26328F8900D50AEE /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		0A904B62271013860018A090 /* AppCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardView.swift; sourceTree = "<group>"; };
+		0A904B64271014300018A090 /* AppPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPortfolioView.swift; sourceTree = "<group>"; };
+		0A987F2D27101EA80046C4D2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0A987F2F2710255D0046C4D2 /* WebsiteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteCardView.swift; sourceTree = "<group>"; };
+		0A987F312710256D0046C4D2 /* WebsitePortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsitePortfolioView.swift; sourceTree = "<group>"; };
 		0AC7B26725EA183F008A3838 /* Delta Vel Development Services.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delta Vel Development Services.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC7B26A25EA183F008A3838 /* Delta_Vel_Development_ServicesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delta_Vel_Development_ServicesApp.swift; sourceTree = "<group>"; };
 		0AC7B26C25EA183F008A3838 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AC7B26E25EA1841008A3838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AC7B27125EA1841008A3838 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AC7B27325EA1841008A3838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC7B27A25EA1882008A3838 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0ADFAD6E25EA1BA50095B84F /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +53,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A197F9E270ED6980074B690 /* FirebaseAnalytics in Frameworks */,
+				0A197FA0270ED6980074B690 /* FirebaseAuth in Frameworks */,
+				0A197FA2270ED6980074B690 /* FirebaseDatabase in Frameworks */,
+				0A197FA4270ED6980074B690 /* FirebaseStorage in Frameworks */,
+				0A904B6127100D820018A090 /* VTabView in Frameworks */,
+				0A4093DC2632668C00D50AEE /* ALExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A197FA5270EE5F30074B690 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4093ED26328F8900D50AEE /* ImageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A4093E426326CF600D50AEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A4093DE26326CE700D50AEE /* AppModel.swift */,
+				0A4093E126326CF100D50AEE /* WebsiteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A4093EA263275BE00D50AEE /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				0ADFAD6E25EA1BA50095B84F /* Portfolio.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
 		0AC7B25E25EA183F008A3838 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +111,17 @@
 			children = (
 				0AC7B26A25EA183F008A3838 /* Delta_Vel_Development_ServicesApp.swift */,
 				0AC7B26C25EA183F008A3838 /* ContentView.swift */,
+				0A987F2D27101EA80046C4D2 /* MenuView.swift */,
+				0A904B64271014300018A090 /* AppPortfolioView.swift */,
+				0A904B62271013860018A090 /* AppCardView.swift */,
+				0A987F2F2710255D0046C4D2 /* WebsiteCardView.swift */,
+				0A987F312710256D0046C4D2 /* WebsitePortfolioView.swift */,
+				0A4093E426326CF600D50AEE /* Models */,
+				0A4093EA263275BE00D50AEE /* Loaders */,
+				0A197FA5270EE5F30074B690 /* Helpers */,
 				0AC7B26E25EA1841008A3838 /* Assets.xcassets */,
 				0AC7B27325EA1841008A3838 /* Info.plist */,
+				0AC7B27A25EA1882008A3838 /* GoogleService-Info.plist */,
 				0AC7B27025EA1841008A3838 /* Preview Content */,
 			);
 			path = "Delta Vel Development Services";
@@ -85,6 +151,14 @@
 			dependencies = (
 			);
 			name = "Delta Vel Development Services";
+			packageProductDependencies = (
+				0A4093DB2632668C00D50AEE /* ALExt */,
+				0A197F9D270ED6980074B690 /* FirebaseAnalytics */,
+				0A197F9F270ED6980074B690 /* FirebaseAuth */,
+				0A197FA1270ED6980074B690 /* FirebaseDatabase */,
+				0A197FA3270ED6980074B690 /* FirebaseStorage */,
+				0A904B6027100D820018A090 /* VTabView */,
+			);
 			productName = "Delta Vel Development Services";
 			productReference = 0AC7B26725EA183F008A3838 /* Delta Vel Development Services.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +186,11 @@
 				Base,
 			);
 			mainGroup = 0AC7B25E25EA183F008A3838;
+			packageReferences = (
+				0A4093DA2632668B00D50AEE /* XCRemoteSwiftPackageReference "ALExt" */,
+				0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0A904B5F27100D820018A090 /* XCRemoteSwiftPackageReference "SwiftUI-VerticalTabView" */,
+			);
 			productRefGroup = 0AC7B26825EA183F008A3838 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +207,7 @@
 			files = (
 				0AC7B27225EA1841008A3838 /* Preview Assets.xcassets in Resources */,
 				0AC7B26F25EA1841008A3838 /* Assets.xcassets in Resources */,
+				0AC7B27B25EA1882008A3838 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +218,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4093E226326CF100D50AEE /* WebsiteModel.swift in Sources */,
+				0A904B63271013860018A090 /* AppCardView.swift in Sources */,
+				0A987F302710255D0046C4D2 /* WebsiteCardView.swift in Sources */,
+				0ADFAD6F25EA1BA50095B84F /* Portfolio.swift in Sources */,
+				0A904B65271014300018A090 /* AppPortfolioView.swift in Sources */,
+				0A987F2E27101EA80046C4D2 /* MenuView.swift in Sources */,
+				0A987F322710256D0046C4D2 /* WebsitePortfolioView.swift in Sources */,
+				0A4093DF26326CE700D50AEE /* AppModel.swift in Sources */,
 				0AC7B26D25EA183F008A3838 /* ContentView.swift in Sources */,
 				0AC7B26B25EA183F008A3838 /* Delta_Vel_Development_ServicesApp.swift in Sources */,
+				0A4093EE26328F8A00D50AEE /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +417,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0A4093DA2632668B00D50AEE /* XCRemoteSwiftPackageReference "ALExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexander480/ALExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.9;
+			};
+		};
+		0A904B5F27100D820018A090 /* XCRemoteSwiftPackageReference "SwiftUI-VerticalTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/SwiftUI-VerticalTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A197F9D270ED6980074B690 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0A197F9F270ED6980074B690 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0A197FA1270ED6980074B690 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0A197FA3270ED6980074B690 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A197F9C270ED6980074B690 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		0A4093DB2632668C00D50AEE /* ALExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A4093DA2632668B00D50AEE /* XCRemoteSwiftPackageReference "ALExt" */;
+			productName = ALExt;
+		};
+		0A904B6027100D820018A090 /* VTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A904B5F27100D820018A090 /* XCRemoteSwiftPackageReference "SwiftUI-VerticalTabView" */;
+			productName = VTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AC7B25F25EA183F008A3838 /* Project object */;
 }
