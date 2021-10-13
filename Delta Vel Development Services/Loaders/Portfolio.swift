@@ -10,8 +10,8 @@ import FirebaseDatabase
 import SwiftUI
 
 class Portfolio: ObservableObject {
-	@Published var apps: [AppModel] = [ AppModel(fake: FakeAppModel()) ]
-	@Published var websites: [WebsiteModel] = [ WebsiteModel(fake: FakeWebsiteModel()) ]
+	@Published var apps: [CardModel] = [ CardModel(mock: MockCardModel()) ]
+	@Published var websites: [CardModel] = [ CardModel(mock: MockCardModel()) ]
 	
 	let db = Database.database().reference()
 
@@ -25,14 +25,14 @@ class Portfolio: ObservableObject {
                     return
                 }
 				
-				guard let app = AppModel(snapshot: childSnapshot) else {
-					ALPrint("Failed To Create AppModel From Snapshot.", .error)
+				guard let appModel = CardModel(snapshot: childSnapshot) else {
+					ALPrint("Failed To Create CardModel From Snapshot.", .error)
 					return
 				}
 				
-				ALPrint("Retrieved App Named: \(app.name).", .info)
+				ALPrint("Retrieved App Named: \(appModel.name).", .info)
 				
-				DispatchQueue.main.async { self.apps.append(app) }
+				DispatchQueue.main.async { self.apps.append(appModel) }
             }
         }
     }
@@ -47,14 +47,14 @@ class Portfolio: ObservableObject {
                     return
                 }
 				
-				guard let website = WebsiteModel(snapshot: childSnapshot) else {
-					ALPrint("Failed To Create WebsiteModel From Snapshot.", .error)
+				guard let websiteModel = CardModel(snapshot: childSnapshot) else {
+					ALPrint("Failed To Create CardModel From Snapshot.", .error)
 					return
 				}
 				
-				ALPrint("Retrieved Website Named: \(website.name)", .info)
+				ALPrint("Retrieved Website Named: \(websiteModel.name)", .info)
                 
-				DispatchQueue.main.async { self.websites.append(website) }
+				DispatchQueue.main.async { self.websites.append(websiteModel) }
             }
         }
     }
