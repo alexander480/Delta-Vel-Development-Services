@@ -52,12 +52,12 @@ struct CardModel: Identifiable {
 // MARK: -- Mock
 
 struct MockCardModel {
-	let id: String = "000000000000" /* [OR] nil*/
+	let id: String = "000000000000" /* [OR] nil */
 	let previewURL: String = "https://firebasestorage.googleapis.com/v0/b/delta-vel-development.appspot.com/o/Portfolio%2FApps%2FBubble%20Raps%2FBubble%20Raps%20Preview%20Image.png?alt=media&token=4323dffa-0484-4f92-a18f-17d7e55206da" /* [OR] nil */
 	let previewImage: UIImage = #imageLiteral(resourceName: "appPlaceholder")
 	let name: String = "Bubble Raps" /* [OR] "App Name" */
 	let promoText: String = "Promotional Text Coming Soon." /* [OR] "Promotional Text" */
-	let description: String = "Description Coming Soon" /* "[OR] Description" */
+	let description: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." /* "[OR] Description" */
 	let keywords: [String] = ["Mock"]
 	let links: [String: String] = ["App Store": "https://apps.apple.com/us/app/bubble-raps/id1495742891"] /* [OR] "https://deltavel.com" */
 }

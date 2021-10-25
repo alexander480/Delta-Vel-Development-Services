@@ -11,7 +11,7 @@ struct PortfolioCard: View {
 	var model: CardModel
 	var isApp: Bool
 	
-	var cornerRadius: CGFloat = 20
+	var cornerRadius: CGFloat = 22
 	var borderWidth: CGFloat = 5
 	
 	init(_ model: CardModel, isApp: Bool) {
@@ -21,58 +21,105 @@ struct PortfolioCard: View {
 	
 	var body: some View {
 		VStack {
-			ZStack(alignment: .top) {
+			//ZStack(alignment: .top) {
+				
+				
+				VStack {
+					
+					VStack(alignment: .leading, spacing: 0) {
+						
+						Image(uiImage: model.previewImage)
+							.resizable()
+							.scaledToFit()
+							//.padding([.bottom], 12)
+						
+						// Divider
+//						Rectangle()
+//							.frame(width: UIScreen.main.bounds.width - 40, height: 1.5, alignment: .center)
+//							.foregroundColor(.black)
+						
+						// MARK: Heading
+						VStack(alignment: .leading, spacing: 0) {
+							
+							// MARK: Icon & Title
+							HStack(alignment: .center, spacing: 12) {
+								Image("Bubble-Raps-Icon-60")
+									.resizable()
+									.frame(width: 32.0, height: 32.0)
+									
+								
+								//VStack(alignment: .leading) {
+									Text(model.name)
+									
+										.font(Font.avenir(.heavy, size: 24))
+										
+										//.fontWeight(.semibold)
+										.foregroundColor(Color.black)
+										//.padding([.top], 8)
+										.frame(width: nil, height: 32)
+									
+//									Text(model.promoText)
+//										.font(.caption2)
+//										.fontWeight(.light)
+//										.foregroundColor(Color.black)
+//										.lineLimit(1)
+//										//.padding([.leading, .bottom], 16)
+								//}
+								
+								Spacer()
+								
+								// MARK: Tag
+								ZStack {
+									RoundedRectangle(cornerRadius: 22)
+										.frame(width: 42, height: 22, alignment: .trailing)
+										.foregroundColor(.white)
+										.overlay(RoundedRectangle(cornerRadius: 22).stroke(lineWidth: 1.5).foregroundColor(.black).opacity(0.3))
+									
+									Text("App")
+										.font(.footnote)
+										.foregroundColor(Color.gray)
+								}
+								
+							}
+							
+							.frame(width: nil, height: 32, alignment: .leading)
+							.padding([.top, .bottom], 8)
+							
+							Text(model.description)
+								.font(Font.avenir(.light, size: 12))
+								//.fontWeight(.light)
+								.foregroundColor(Color.black)
+								.multilineTextAlignment(.leading)
+								//.lineLimit(/*@START_MENU_TOKEN@*/4/*@END_MENU_TOKEN@*/)
+								//.padding([.leading, .trailing], 8)
+								.padding([.top], 4)
+								.padding([.bottom], 12)
+						}
+						.padding()
+						
+					}
+					//.frame(width: UIScreen.main.bounds.width - 40, height: nil, alignment: .top)
+					.foregroundColor(.white)
+					.cornerRadius(self.cornerRadius)
+				}
+			//}
+			
+			
+			.background(
 				RoundedRectangle(cornerRadius: 22)
 					.foregroundColor(.white)
-					.shadow(color: .gray, radius: 8, x: 0, y: 0)
-					//.overlay(RoundedRectangle(cornerRadius: 22).stroke(lineWidth: 2).foregroundColor(.gray).opacity(0.3))
-					.frame(width: UIScreen.main.bounds.width - 40, height: nil, alignment: .top)
-				
-				
-				VStack(alignment: .center, spacing: 0) {
-					
-					Image(uiImage: model.previewImage)
-						.resizable()
-						.scaledToFit()
-					
-					VStack(alignment: .center, spacing: 12) {
-						Text(model.name)
-							.font(.title)
-							.fontWeight(.semibold)
-							.foregroundColor(Color.black)
-						
-						Text(model.promoText)
-							.font(.caption)
-							.fontWeight(.regular)
-							.foregroundColor(Color.black)
-							.multilineTextAlignment(.center)
-							.lineLimit(/*@START_MENU_TOKEN@*/4/*@END_MENU_TOKEN@*/)
-							.padding([.bottom], 12)
-							
-//
-//						Divider()
-//							.padding([.bottom], 12)
-//
-//						Text(model.description)
-//							.font(.caption2)
-//							//.fontWeight(.thin)
-//							.foregroundColor(Color.black)
-//							.multilineTextAlignment(.center)
-//							.lineLimit(/*@START_MENU_TOKEN@*/4/*@END_MENU_TOKEN@*/)
-					}
-					.padding([.top], 20)
-					.padding([.leading, .trailing], 40)
-					
-				}
-				.frame(width: UIScreen.main.bounds.width - 40, height: nil, alignment: .top)
-				.foregroundColor(.white)
-				.cornerRadius(self.cornerRadius)
-			}
-			
+					.shadow(color: .gray, radius: 4, x: 0, y: 0)
+					.overlay(
+						RoundedRectangle(cornerRadius: 22)
+							//.stroke(lineWidth: 1.5)
+							.foregroundColor(.white)
+							.opacity(1)
+					)
+			)
 			.padding()
+							//.frame(width: UIScreen.main.bounds.width - 40, height: nil, alignment: .top))
 			
-		}
-		//.frame(width: UIScreen.main.bounds.width - 40, height: 435, alignment: .top)
+		}//.padding([.top, .bottom], 60)
 		
 		
 	}
