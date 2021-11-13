@@ -18,14 +18,18 @@ struct MenuView: View {
 	
     var body: some View {
 		
-			NavigationView {
+		NavigationView {
+			ZStack {
+				Color("Background Color")
+					.ignoresSafeArea()
+				
 				VStack {
 					GeometryReader { proxy in
 						ZStack {
 							RoundedRectangle(cornerRadius: 22)
-								.foregroundColor(.white)
-								.shadow(color: .gray, radius: 10, x: 0, y: 0)
-								//.overlay(RoundedRectangle(cornerRadius: 22).stroke(lineWidth: 2).foregroundColor(.gray).opacity(0.3))
+								.foregroundColor(Color("Menu Card Color"))
+								.shadow(color: .black, radius: 10, x: 0, y: 0).opacity(0.32)
+								.overlay(RoundedRectangle(cornerRadius: 22).stroke(lineWidth: 2).foregroundColor(Color("Menu Border Color")).opacity(0.2))
 								.rotationEffect(Angle.degrees(self.rotation))
 								.scaleEffect(self.scale)
 								.frame(width: 220, height: UIScreen.main.bounds.width - 40, alignment: .center)
@@ -34,7 +38,7 @@ struct MenuView: View {
 								ZStack {
 									Circle()
 										.foregroundColor(Color("Menu Circle Color"))
-										// .overlay(Circle().stroke(lineWidth: 1).foregroundColor(.black).opacity(0.3))
+										.overlay(Circle().stroke(lineWidth: 1).foregroundColor(Color("Menu Border Color")).opacity(0.3))
 										.padding([.all], 32)
 										.frame(width: 220, height: 320, alignment: .center)
 									
@@ -46,7 +50,7 @@ struct MenuView: View {
 										.offset(x: -1.5, y: 1.5)
 									
 									Rectangle()
-										.foregroundColor(.gray)
+										.foregroundColor(Color("Menu Line Color"))
 										.opacity(0.30)
 										.rotationEffect(Angle.degrees(self.lineRotation))
 										.frame(width: 1, height: 200, alignment: .center)
@@ -70,15 +74,16 @@ struct MenuView: View {
 							)
 						}
 						
-						
-						.frame(width: proxy.size.width, height: proxy.size.height - 96 /* navbar height */, alignment: .center)
+						.frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
+						.offset(x: 0, y: -48) /* half of navbar height */
 						.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
 						.onAppear(perform: self.setDarkPageIndicator)
 					}
 				}
 			}
-			.navigationBarTitle("Portfolio")
-			.accentColor(Color(red: 45, green: 187, blue: 193))
+		}
+		.navigationBarTitle("Portfolio")
+		.accentColor(Color(red: 45, green: 187, blue: 193))
 //			if #available(iOS 15.0, *) { .tint(Color(red: 45, green: 187, blue: 193)) }
 //			else {  }
     }
@@ -91,7 +96,8 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+		return MenuView()
+			.preferredColorScheme(.dark)
     }
 }
 

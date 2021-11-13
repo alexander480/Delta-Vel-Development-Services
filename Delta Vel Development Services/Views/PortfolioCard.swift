@@ -50,9 +50,7 @@ struct PortfolioCard: View {
 								
 								//VStack(alignment: .leading) {
 									Text(model.name)
-									
 										.font(Font.avenir(.heavy, size: 24))
-										
 										//.fontWeight(.semibold)
 										.foregroundColor(Color.black)
 										//.padding([.top], 8)
